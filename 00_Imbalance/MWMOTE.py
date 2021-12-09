@@ -248,7 +248,7 @@ import numpy as np
 # get the lable from the dataset
 
 # read the dataset
-Data = pd.read_csv('./Data/CarClaims/Pre-Processed_OneHotEncoding.csv')
+Data = pd.read_csv('/Users/abhiishekchugh/Documents/GitHub/CANN-for-Fraud-Detection/Automobile Insurance/data/Pre-Processed_OneHotEncoding.csv')
 
 X = Data.iloc[:, :-1]
 y = Data.iloc[:, -1]
@@ -297,7 +297,7 @@ generatedNewData.shape
 
 generatedNewData.head()
 
-generatedNewData.to_csv(r'./Data/CarClaims/MWMOTE/mwmoteGeneratedOneHotData.csv', index=False)
+generatedNewData.to_csv(r'/Users/abhiishekchugh/Documents/GitHub/CANN-for-Fraud-Detection/Automobile Insurance/data/MWMOTE/mwmoteGeneratedOneHotData.csv', index=False)
 
 count = label_new.count(-1)
 
@@ -307,7 +307,7 @@ newLabel = pd.DataFrame(label_new)
 
 newLabel.replace(-1, 1)
 
-newLabel.to_csv(r'./Data/CarClaims/MWMOTE/mwmoteGeneratedLabel.csv', index=False )
+newLabel.to_csv(r'/Users/abhiishekchugh/Documents/GitHub/CANN-for-Fraud-Detection/Automobile Insurance/data/MWMOTE/mwmoteGeneratedLabel.csv', index=False )
 
-X_test.to_csv(r"./Data/CarClaims/MWMOTE/X_test.csv", index=False)
-y_test.to_csv(r"./Data/CarClaims/MWMOTE/y_test.csv", index=False)
+X_test.to_csv(r"/Users/abhiishekchugh/Documents/GitHub/CANN-for-Fraud-Detection/Automobile Insurance/data/MWMOTE/X_test.csv", index=False)
+y_test.to_csv(r"/Users/abhiishekchugh/Documents/GitHub/CANN-for-Fraud-Detection/Automobile Insurance/data/MWMOTE/y_test.csv", index=False)
